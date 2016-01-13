@@ -1,0 +1,22 @@
+package main;
+
+public class DreamPair {
+	public static int getSumOfDevisors(int number){
+		int result = 0;
+		for (int i = 1; i < number; i++) {
+			if (number % i != 0){
+				result += i;
+			}
+		}
+		return result;
+	}
+	public static boolean isDreamPair(int number){
+		System.out.println(getSumOfDevisors(number));
+		System.out.println(getSumOfDevisors(getSumOfDevisors(number)));
+		return getSumOfDevisors(number) == getSumOfDevisors(getSumOfDevisors(number))? true: false ;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(isDreamPair(220));
+	}
+}
