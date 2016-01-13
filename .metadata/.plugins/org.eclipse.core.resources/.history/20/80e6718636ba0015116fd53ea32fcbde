@@ -1,0 +1,23 @@
+package main;
+
+public class Factorialix {
+	public static int factorial(int number){
+		return number == 1? 1 : number*factorial(number - 1);
+	}
+	
+	public static int sumOfFactorial(int number){
+		int result = 0;
+		while(number != 0){
+			result += factorial(number % 10);
+			number = number/10;
+		}
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(sumOfFactorial(1));
+		System.out.println(sumOfFactorial(4));
+		System.out.println(sumOfFactorial(5));
+		System.out.println(sumOfFactorial(145));
+	}
+}
