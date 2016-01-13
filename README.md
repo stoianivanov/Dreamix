@@ -1,3 +1,3 @@
 # Dreamix
 
-This repository contain tasks from interview the company Dremix.
+This repository contains tasks from the interview with company Dremix.
