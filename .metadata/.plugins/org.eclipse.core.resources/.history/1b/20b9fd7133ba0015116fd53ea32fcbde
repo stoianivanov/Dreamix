@@ -11,10 +11,10 @@ public class DreamPair {
 		return result;
 	}
 	public static boolean isDreamPair(int number){
-
+		System.out.println(getSumOfDevisors(getSumOfDevisors(number)));
+		System.out.println(getSumOfDevisors(number));
 		return number == getSumOfDevisors(getSumOfDevisors(number)) &&
-		getSumOfDevisors(getSumOfDevisors(number)) < 1000 &&
-		getSumOfDevisors(number) != number? true: false ;
+		getSumOfDevisors(getSumOfDevisors(number)) < 1000? true: false ;
 	}
 	
 	public static void getAllDreamPairs(){

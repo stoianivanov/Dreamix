@@ -14,7 +14,7 @@ public class DreamPair {
 
 		return number == getSumOfDevisors(getSumOfDevisors(number)) &&
 		getSumOfDevisors(getSumOfDevisors(number)) < 1000 &&
-		getSumOfDevisors(number) != number? true: false ;
+		getSumOfDevisors(getSumOfDevisors(number)) != number? true: false ;
 	}
 	
 	public static void getAllDreamPairs(){

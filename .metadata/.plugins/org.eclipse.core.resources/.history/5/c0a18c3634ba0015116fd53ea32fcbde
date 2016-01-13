@@ -27,5 +27,6 @@ public class DreamPair {
 	}
 	public static void main(String[] args) {
 		getAllDreamPairs();
+		System.out.println(getSumOfDevisors(496));
 	}
 }

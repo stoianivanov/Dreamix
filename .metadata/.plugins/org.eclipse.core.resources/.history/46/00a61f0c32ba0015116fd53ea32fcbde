@@ -11,21 +11,18 @@ public class DreamPair {
 		return result;
 	}
 	public static boolean isDreamPair(int number){
-
 		return number == getSumOfDevisors(getSumOfDevisors(number)) &&
-		getSumOfDevisors(getSumOfDevisors(number)) < 1000 &&
-		getSumOfDevisors(number) != number? true: false ;
+		getSumOfDevisors(getSumOfDevisors(number)) < 1000? true: false ;
 	}
 	
 	public static void getAllDreamPairs(){
 		for (int i = 1; i < 1001; i++) {
-			if(isDreamPair(i)){
-				System.out.println(i);
-			}
-			
+			System.out.println(i);
 		}
 	}
 	public static void main(String[] args) {
-		getAllDreamPairs();
+		System.out.println(isDreamPair(221));
+		System.out.println(isDreamPair(220));
+		System.out.println(isDreamPair(284));
 	}
 }
