@@ -1,0 +1,10 @@
+package main;
+
+public class InputAdapter implements Input {
+	private Scanner scanner;
+	@Override
+	public String read() {
+		return scanner.scan();
+	}
+
+}

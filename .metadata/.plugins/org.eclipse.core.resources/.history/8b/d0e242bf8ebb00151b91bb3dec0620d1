@@ -11,10 +11,7 @@ public class Label {
     public void useSourceAdapter() {
 
         this.text = fSource.read();
-    }
-    
-    public String getText(){
-    	return text;
+
     }
 
 }

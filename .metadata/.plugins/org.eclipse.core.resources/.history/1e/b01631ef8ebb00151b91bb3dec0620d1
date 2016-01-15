@@ -13,7 +13,7 @@ public class Label {
         this.text = fSource.read();
     }
     
-    public String getText(){
+    private String getText(){
     	return text;
     }
 
